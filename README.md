@@ -29,11 +29,19 @@ echo "Lorem ipsum dolor sit amet" >> content/_index.md
 # serve content from _index.md.
 echo "{{ .Content }}" >> themes/minimum-viable-hugo/layouts/index.html
 
-# Serve the site.
-hugo server
+# Serve the site. Don't leave out the -D yet.
+hugo server -D
 ```
 
 Then go to `localhost:####` in your browser and you should see it.
+
+Add something like
+```yaml
+---
+draft: false
+---
+```
+to the top of `_index.md` to serve it without the `-D`raft flag.
 
 # TODO
 
