@@ -14,7 +14,10 @@ This repo aims to fix that.
 
 ```bash
 # Start a new site.
-hugo new site .
+# We --force because this will complain
+# if *anything* else is in the directory,
+# even something so meek as a freshborn .git/.
+hugo new site . --force
 
 # Make a new theme. Tell Hugo we want to use it.
 hugo new theme minimum-viable-hugo
@@ -35,13 +38,23 @@ hugo server -D
 
 Then go to `localhost:####` in your browser and you should see it.
 
-Add something like
-```yaml
+If you look at `content/_index.md`, it will look like
+
+```markdown
 ---
-draft: false
+title: ""
+date: 2023-02-27T18:21:50+02:00
+draft: true
 ---
+
+Lorem ipsum dolor sit amet
 ```
-to the top of `_index.md` to serve it without the `-D`raft flag.
+
+Change `draft` to `false`. Then you'll be able to run your site with just
+
+```bash
+hugo server
+```
 
 # TODO
 
