@@ -1,6 +1,8 @@
 Minimum Viable Hugo 
 ===================
 
+![image](https://user-images.githubusercontent.com/53230903/221623209-8a557a70-b81a-4232-a067-b3b0f1f1c577.png)
+
 
 4 out of 5 web devs have experienced the following:
 
