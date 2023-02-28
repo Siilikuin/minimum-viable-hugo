@@ -59,6 +59,3 @@ Change `draft` to `false`. Then you'll be able to run your site with just
 hugo server
 ```
 
-# TODO
-
-- Turn this repo into a submodule you can pull in for this.
