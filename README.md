@@ -59,3 +59,35 @@ Change `draft` to `false`. Then you'll be able to run your site with just
 hugo server
 ```
 
+<br>
+<br>
+<br>
+<br>
+
+# Advanced
+
+## Programming `_index.md`
+
+There's nothing wrong with using Hugo and `_index.md` just to create one giant, plain, HTML page.
+
+Eventually you might want to start adding things to it _programmatically_, using the YAML frontmatter. That's where that `layouts/index.html` comes in again.
+
+Try adding a 
+
+![image](https://user-images.githubusercontent.com/53230903/222879440-af026be6-fa6c-42df-aa1c-4b66ca698e06.png)
+
+If getting `_index.md` to print content is the "Hello, World!" of Hugo, then editing a `layouts/` file is its FizzBuzz. It gives you the minimum viable _mental model_ to start digging in and figuring out _which_ `layouts/` file you need to edit to do what you want.
+
+## One last tip: Keeping HTML comments
+
+Hugo is designed for professionals. As such, any comments you add to a `layouts/` page are stripped out by default.
+
+However this can make learning the flow of template file to template file hard. So here's a workaround:
+
+```
+{{"<!-- from layouts/index.html -->" | safeHTML }}
+```
+
+And here's us looking at the comment in the source code of the page:
+
+![image](https://user-images.githubusercontent.com/53230903/222880094-e612b6f1-1981-4476-855d-0600d1a04696.png)
