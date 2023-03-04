@@ -72,8 +72,6 @@ There's nothing wrong with using Hugo and `_index.md` just to create one giant, 
 
 Eventually you might want to start adding things to it _programmatically_, using the YAML frontmatter. That's where that `layouts/index.html` comes in again.
 
-Try adding a 
-
 ![image](https://user-images.githubusercontent.com/53230903/222879440-af026be6-fa6c-42df-aa1c-4b66ca698e06.png)
 
 If getting `_index.md` to print content is the "Hello, World!" of Hugo, then editing a `layouts/` file is its FizzBuzz. It gives you the minimum viable _mental model_ to start digging in and figuring out _which_ `layouts/` file you need to edit to do what you want.
