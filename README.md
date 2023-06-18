@@ -2,8 +2,8 @@ Minimum Viable Hugo
 ===================
 *[Hugo](https://gohugo.io/) is a web framework which is frequently used to generate content from [Markdown](https://www.markdownguide.org/tools/hugo/). This repository helps new users get started.*
 
+![image](https://github.com/Siilikuin/minimum-viable-hugo/assets/53230903/fbfb57ae-bf32-452c-8480-1582383c0575)
 
-![image](https://user-images.githubusercontent.com/53230903/221623209-8a557a70-b81a-4232-a067-b3b0f1f1c577.png)
 
 4 out of 5 web devs have experienced the following:
 
@@ -14,6 +14,8 @@ Minimum Viable Hugo
 This repo aims to fix that.
 
 # Quickstart
+
+_Updated June 2023 for **Hugo v0.113.0**._
 
 ```bash
 # Start a new site.
@@ -71,7 +73,8 @@ There's nothing wrong with using Hugo and `_index.md` just to create one giant, 
 
 Eventually you might want to start adding things to it _programmatically_, using the YAML frontmatter. That's where that `layouts/index.html` comes in again.
 
-![image](https://user-images.githubusercontent.com/53230903/222879440-af026be6-fa6c-42df-aa1c-4b66ca698e06.png)
+![image](https://github.com/Siilikuin/minimum-viable-hugo/assets/53230903/9b306b05-83df-4155-b557-38f8e1950936)
+
 
 If getting `_index.md` to print content is the "Hello, World!" of Hugo, then editing a `layouts/` file is its FizzBuzz. It gives you the minimum viable _mental model_ to start digging in and figuring out _which_ `layouts/` file you need to edit to do what you want.
 
@@ -87,4 +90,5 @@ However this can make learning the flow of template file to template file hard. 
 
 And here's us looking at the comment in the source code of the page:
 
-![image](https://user-images.githubusercontent.com/53230903/222880094-e612b6f1-1981-4476-855d-0600d1a04696.png)
+![image](https://github.com/Siilikuin/minimum-viable-hugo/assets/53230903/4c0dcaa0-e1c4-4d55-9855-3b13666db9fe)
+
