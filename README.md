@@ -24,10 +24,9 @@ hugo new site . --force
 
 # Make a new theme. Tell Hugo we want to use it.
 hugo new theme minimum-viable-hugo
-echo "theme = 'minimum-viable-hugo'" >> config.toml
+echo "theme = 'minimum-viable-hugo'" >> hugo.toml
 
 # GOTCHA #1: Your root page is called _index.md.
-mkdir content/
 hugo new _index.md
 echo "Lorem ipsum dolor sit amet" >> content/_index.md
 
