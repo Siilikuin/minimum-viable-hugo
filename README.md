@@ -31,6 +31,8 @@ echo "theme = 'minimum-viable-hugo'" >> hugo.toml
 
 # If you're on Hugo v0.118.0 or later, you can skip the next two gotchas.
 # But they won't break anything, and may even teach you something.
+# Check with
+hugo version
 
 
 # GOTCHA #1: Your root page is called _index.md.
