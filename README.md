@@ -15,7 +15,7 @@ This repo aims to fix that.
 
 # Quickstart
 
-_Updated June 2023 for **Hugo v0.113.0**._
+_Updated October 2023 for **Hugo v0.119.0**. Works on a great deal many older versions as well._
 
 ```bash
 # Start a new site.
@@ -28,6 +28,11 @@ hugo new site . --force
 hugo new theme minimum-viable-hugo
 echo "theme = 'minimum-viable-hugo'" >> hugo.toml
 
+
+# If you're on Hugo v0.118.0 or later, you can skip the next two gotchas.
+# But they won't break anything, and may even teach you something.
+
+
 # GOTCHA #1: Your root page is called _index.md.
 hugo new _index.md
 echo "Lorem ipsum dolor sit amet" >> content/_index.md
@@ -35,6 +40,7 @@ echo "Lorem ipsum dolor sit amet" >> content/_index.md
 # GOTCHA #2: Hugo needs to be explicitly told to
 # serve content from _index.md.
 echo "{{ .Content }}" >> themes/minimum-viable-hugo/layouts/index.html
+
 
 # Serve the site. Don't leave out the -D yet.
 hugo server -D
